@@ -5,17 +5,21 @@
     margin-right: auto;
     
 }
-.navegacion{
-    width: 0.5em;
-    height: 0.5em;
 
+a{
+    color: #820c6c;  
+}
+.nav-pills .nav-link.active{
+    color: #820c6c;
+    background-color:#fccfe2;
+    border-color: #fccfe2;
 }
 
 .textoIndex{
     display:flex;   
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    transform: translate(-5%, -253%);
+    transform: translate(2%, -300%);
     color: #820C6C;
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -47,16 +51,9 @@ header{
     font-size: x-large; 
     
 }
-
-
 .logoInic{
-    width: 5%;
-    margin-left: 30%;
-    margin-bottom: -5%;
     border-radius: 1rem;
-}
-.logo__efecto:hover{
-    width: 4%;
+    width: 75%;
 }
 
 body{
@@ -97,13 +94,18 @@ body{
 ul{
     list-style: none;
 }
-
-nav{
+.navbar-collapse{
     display: flex;
     justify-content: space-evenly;
     font-family: 'Roboto Slab', serif;
     color: #820C6C;
-    
+}
+
+nav{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Roboto Slab', serif;
+        color: #820C6C;
 }
 
 .menu{
@@ -159,11 +161,12 @@ nav{
 }
 
 .titleRegistro{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     font-family: "Roboto slab";
     color: #820C6C;
     white-space: pre-line;
+    margin: 30px;
 }
 
 /* Contacto */
@@ -301,6 +304,31 @@ div{
     padding: 10px;
     font-size: large;
 }
+/* Tienda */
+
+.btn{
+    background-color: #EB84AF;
+    border-color: #EB84AF;
+    font-family: 'Roboto Slab', serif;
+    color: #820C6C;
+}
+.card{
+    border-radius: 1rem;
+    background-color:#f8edec;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+h5{
+    font-family: 'Roboto Slab', serif;
+    color: #820C6C;
+}
+
+.card-text{
+    color: #820C6C;
+    font-family: 'Roboto Slab', serif;
+}
 
 /* /* Grids Sucursales */
 
@@ -368,11 +396,14 @@ div{
 /* Responsive Index */
 
 @media screen and (max-width: 767px){
-    .logoInic{
-        width: 15%;
-        margin-left: 0%;
-        margin-bottom: -15%;
+
+    .navbar .menu {
+        display: block;
+        position: fixed;
+        top: 15vh;
+        right: 0;
     }
+
     .imgInicio{
         display: flex;
         width: 100%;
@@ -473,12 +504,4 @@ div{
     background-attachment: fixed;
     font-size: medium;
     }
-
-    /* Responsive Tienda */
-.Tienda{
-    margin-top: 30px;
-    }
-.textoTienda{
-    top: 55%;
-}
 }

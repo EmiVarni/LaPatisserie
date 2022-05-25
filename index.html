@@ -15,39 +15,67 @@
     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
     
 </head>
 <body>
+    <div class="container-fluid">
+        <nav class="nav nav-pills navbar navbar-expand-lg navbar-light">
+            <a href="" class="navbar-brand"><img src="./IMG/Logo.jpg" class="logoInic" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="menu menu__nav">
+                    <li class="nav-item">
+                        <a href="./PAGES/principal.html" style="text-decoration:none" class="nav-link active" aria-current="page">Home</a>
+                    </li >
+                    <li class="nav-item">
+                        <a href="./PAGES/registrarme.html" style="text-decoration:none" class="nav-link active" aria-current="page">Registrarme</a>
+                    </li>       
+                    <li class="nav-item">
+                        <a href="./PAGES/contacto.html" style="text-decoration:none" class="nav-link active" aria-current="page">Contactanos</a>
+                    </li>    
+                </ul>
+            </div>
+        </nav>
     
-    <img src="./IMG/Logo.jpg" alt="" class="logoInic logo__efecto">
+        <p><img src="./IMG/Panes.PNG" class="imgInicio" alt="" data-bs-toggle="modal" data-bs-target="#modalInicio"></p>
     
-    
-    <nav>
-        <ul class="menu menu__nav">
-        <li>
-            <a href="./PAGES/principal.html" style="text-decoration:none">Home</a>
-        </li>
-        <li>
-            <a href="./PAGES/registrarme.html" style="text-decoration:none">Registrarme</a>
-        </li>       
-        <li>
-            <a href="./PAGES/contacto.html" style="text-decoration:none">Contactanos</a>
-        </li>    
-        </ul>
-    </nav>
-    
-    <p><img src="./IMG/Panes.PNG" class="imgInicio" alt=""></p>
-    
-    <h1 class="textoIndex animacionPrincipal animate__animated animate__fadeIn">
-        Bienvenidos
-        a la Patisserie
-    </h1> 
+        <h1 class="textoIndex animacionPrincipal animate__animated animate__fadeIn">
+            Bienvenidos
+            a la Patisserie
+        </h1> 
 
+        <section class="modales">
+            <div class="modal" id="modalInicio" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Suscribirse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¿Deseas que te enviemos info de nuestros recomendados del día?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                            <button type="button" class="btn btn-light">Suscribirme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
     <div class="footer">
         <footer>
             <span>Copyright Emiliano Varni</span>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
