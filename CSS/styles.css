@@ -1,4 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Index */
+
 .imgInicio{
     display: block;
     margin-left: auto;
@@ -14,7 +19,11 @@ a{
     background-color:#fccfe2;
     border-color: #fccfe2;
 }
-
+.nav a:hover{
+    color: #EB84AF;
+    font-size: medium;
+    font-family:'Roboto', sans-serif;
+}
 .textoIndex{
     display:flex;   
     flex-direction: row-reverse;
@@ -28,9 +37,10 @@ a{
 }
 /* Principal */
 .textinic{
-    background-image: url(../IMG/imghome.PNG);
-    background-size: cover;
-    background-position: center;
+    display:flex;   
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    transform: translate(1%, -330%);
     color: #820C6C;
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -51,15 +61,10 @@ header{
     font-size: x-large; 
     
 }
-.logoInic{
-    border-radius: 1rem;
-    width: 75%;
-}
 
-.logo{
-    width: 5%;
-    margin-left: 30%;
-    margin-bottom: -5%;
+
+.logoInic{
+    width: 75%;
     border-radius: 1rem;
 }
 
@@ -108,13 +113,6 @@ ul{
     color: #820C6C;
 }
 
-nav{
-        display: flex;
-        justify-content: space-evenly;
-        font-family: 'Roboto Slab', serif;
-        color: #820C6C;
-}
-
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +135,7 @@ nav{
 /*  Registrarme */
 .bodyRegistro{
     background-image: url(../IMG/imgprod.PNG);
-    background-size: cover;
+    background-size:cover;
     background-position:center;
 }
 
@@ -168,7 +166,7 @@ nav{
 }
 
 .titleRegistro{
-    font-size: x-large;
+    font-size: 20px;
     text-align: center;
     font-family: "Roboto slab";
     color: #820C6C;
@@ -194,10 +192,10 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin: 20px;
+    margin: 8px;
     font-family: 'Roboto Slab', serif;
     color: #820C6C;
-    font-size: large;
+    font-size: 16px;
 }
 
 .enviar{
@@ -239,10 +237,14 @@ nav{
 }
 /* Productos */
 
+.prodTitle{
+    padding: 25px;  
+}
+
 main{
     max-width: 500px;
     padding: 5px;
-    margin-left: 30%;
+    margin-left: 35%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -407,7 +409,7 @@ div{
     .navbar .menu {
         display: block;
         position: fixed;
-        top: 15vh;
+        top: 10vh;
         right: 0;
     }
 
@@ -437,17 +439,17 @@ div{
         justify-content: flex-end;
         padding: initial;
         margin: 10px;
+        font-size: small;
     }
 
     /* Responsive Productos */
     main{
         padding: 10px;
-        margin-left: 20%;
+        margin-left: 5%;
     }
 
     .secciones{
         font-size: large; 
-        
     }
     .menuProd{
         padding: 5px;
@@ -456,7 +458,14 @@ div{
     .prodTitle{
         display: flex;
         justify-content: center;
-    
+        font-size: large;    
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     /* Responsive Registrame */
@@ -468,47 +477,42 @@ div{
     }
     .titleRegistro{
         margin: 40px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     /* Responsive Contacto */
 
-.bodyContacto{
-    background-position:center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.subContacto{
-    padding: 5px;
-    margin: 2px;
+    .bodyContacto{
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
+    .subContacto{
+        padding: 5px;
+        margin: 2px;
+        }
 
     /* Responsive Principal */
 
     .textinic{
-    background-position: center center;
-    background-size: inherit;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: large;
+        transform: translate(1%, -295%);
     }
 
     /* Responsive Sucursales */
-.pagSucursales{
-    margin-left: 17%;
-
+    .pagSucursales{
+        margin-left: 17%;
+        margin-top: 15%;
     }
-.imgSucur{
+    .imgSucur{
     background-image: none;
-
     }
 
     /* Responsibe Nosotros */
-.Roboto{
-    display: grid;
-    justify-items: stretch;
-    background-position:center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: medium;
-    }
+    .Roboto{
+        background-image: none;
+        margin: 80px;
+        }
 }
