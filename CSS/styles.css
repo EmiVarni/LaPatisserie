@@ -28,12 +28,12 @@ a{
     display:flex;   
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    transform: translate(2%, -300%);
+    transform: translate(2%, -235%);
     color: #820C6C;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 1.5cm;
-    white-space: pre-line;  
+    white-space: pre-line;   
 }
 /* Principal */
 .textinic{

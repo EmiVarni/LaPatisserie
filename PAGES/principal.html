@@ -21,37 +21,58 @@
 <link rel="stylesheet" href="../CSS/styles.css">
 
 </head>
-
 <body>
-    <nav class="nav nav-pills navbar navbar-expand-lg navbar-light">
-        <a href="../index.html" class="navbar-brand"><img src="../IMG/Logo.jpg" class="logoInic" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="menu menu__nav">
-                <li class="nav-item">
-                    <a href="nosotros.html" style="text-decoration:none" class="nav-link active" aria-current="page">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a href="productos.html" style="text-decoration:none" class="nav-link active" aria-current="page">Nuestros Productos</a>
-                </li>       
-                <li class="nav-item">
-                    <a href="sucursales.html" style="text-decoration:none" class="nav-link active" aria-current="page">Sucursales</a>
-                </li>  
-                <li class="nav-item">
-                    <a href="tienda.html" style="text-decoration:none" class="nav-link active" aria-current="page">Tienda</a>
-                </li>       
-            </ul>
-        </div>
-    </nav>
-    
-        <p><img src="../IMG/imghome.PNG" alt="" class="imgInicio"></p>
+    <div>
+        <nav class="nav nav-pills navbar navbar-expand-lg navbar-light">
+            <a href="../index.html" class="navbar-brand"><img src="../IMG/Logo.jpg" class="logoInic" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="menu menu__nav">
+                    <li class="nav-item">
+                        <a href="nosotros.html" style="text-decoration:none" class="nav-link active" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" style="text-decoration:none" class="nav-link active" aria-current="page">Nuestros Productos</a>
+                    </li>       
+                    <li class="nav-item">
+                        <a href="sucursales.html" style="text-decoration:none" class="nav-link active" aria-current="page">Sucursales</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a href="tienda.html" style="text-decoration:none" class="nav-link active" aria-current="page">Tienda</a>
+                    </li>       
+                </ul>
+            </div>
+        </nav>
+        <section class="modales">
+            <div class="modal" id="modalPrincipal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Suscribirse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¿Deseas que te enviemos info de nuestros recomendados del día?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                            <button type="button" class="btn btn-light">Suscribirme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <header>
+        <p><img src="../IMG/imghome.PNG" alt="" class="imgInicio" data-bs-toggle="modal" data-bs-target="#modalPrincipal"></p>
         <h1 class="textinic animacionPrincipal animate__animated animate__fadeIn">
             La Patisserie te
             acompaña en cada 
             momento de tu día
         </h1> 
+    </header>
 
     <div class="footer">
     <footer>
