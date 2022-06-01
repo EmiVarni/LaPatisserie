@@ -1,0 +1,34 @@
+.imgInicio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}    
+.logoInic{
+    width: 75%;
+    border-radius: $medida-borde;
+}
+// Contacto
+.bodyContacto{
+    background-image: url(../IMG/Contacto.png);
+    background-size: cover;
+    background-position:initial;
+}
+// Registro
+.bodyRegistro{
+    background-image: url(../IMG/imgprod.PNG);
+    background-size:cover;
+    background-position:center;
+
+    
+}
+// Sucursales
+.imgSucur{
+    background-image: url(../IMG/Sucursales.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $color-fuente;
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+}

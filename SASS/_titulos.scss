@@ -1,0 +1,22 @@
+// titulo registrarme
+.titleRegistro{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: $color-fuente;
+    white-space: pre-line;
+    margin: 30px;
+}
+// Nosotros
+.titNosotros{
+    font-family: 'Roboto Slab', serif;
+    color: $color-fuente;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+}
+// Titulo productos
+.prodTitle{
+    padding: 25px;  
+}
+

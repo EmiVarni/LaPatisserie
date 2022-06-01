@@ -1,0 +1,46 @@
+// grid productos
+.imgProd{
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    border-radius: $medida-borde;
+}
+.productos{
+    text-align: center;
+    font-family: $fuentePrincipal;
+    color: $color-fuente;
+    padding: 10px;
+    margin: -30px;
+}
+.menuProd{
+    list-style: none;
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: large;
+}
+.secciones{
+    font-size: x-large; 
+}
+// grid sucursales
+.sucursales{
+    padding: 10px;
+    margin: 50px;
+    font-family: $fuentePrincipal;
+    color: $color-fuente;
+    font-size: large;
+    border-radius: 1cm;
+    border: $color-borde;
+}
+
+.seccion{
+    font-size: x-large;
+    margin-top: 8%;
+
+}
+.tienda{
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: $medida-borde;
+}
