@@ -20,7 +20,7 @@ ul{
 }
 .menu{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     }
 .menu li{
     padding: 10px;

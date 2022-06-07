@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contamos con una seleccion de productos 100% organicos 
+    brindando mayor frescura a nuestras recetas, con un toque distintivo e innovador.">
+    <meta name="keywords" content="pasteleria, cosas ricas, tortas, alfajores, macarons, eventos, ducle de leche">
     <title>Nuestros Productos</title>
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Square+Peg&family=Tapestry&display=swap" rel="stylesheet">
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
                 integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -26,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="menu menu__nav">
                 <li class="nav-item">
-                    <a href="principal.html" style="text-decoration:none" class="nav-link active" aria-current="page">Home</a>
+                    <a href="../index.html" style="text-decoration:none" class="nav-link active" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="nosotros.html" style="text-decoration:none" class="nav-link active" aria-current="page">Nosotros</a>
@@ -36,73 +41,170 @@
                 </li>  
                 <li class="nav-item">
                     <a href="tienda.html" style="text-decoration:none" class="nav-link active" aria-current="page">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" style="text-decoration:none" class="nav-link active" aria-current="page">Contactanos</a>
                 </li>       
             </ul>
         </div>
     </nav>
-
-
-    <header class="prodTitle">    
-        <h1>Nuestros Productos</h1>    
+    <header>    
+        <h1>Nuestros Productos</h1>
+        <i class='bx bx-camera'></i><p>Clicklea las imagenes para descubrirlos</p>  
     </header>   
     <main>
         <div class="foto1">
-            <img src="../IMG/Panes1.PNG" class="imgProd">
+            <img src="../IMG/pasteArg.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalArgentina">
         </div>
         <div class="foto2">
-            <img src="../IMG/Panes2.PNG" class="imgProd">
+            <img src="../IMG/Panes2.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalPanes">
         </div>
+
         <div class="foto3">
-            <img src="../IMG/Torta1.PNG" class="imgProd">
+            <img src="../IMG/Torta2.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalTortas">
         </div>
         <div class="foto4">
-            <img src="../IMG/Torta2.PNG" class="imgProd">
+            <img src="../IMG/Torta3.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalFrancesa">
         </div>
         <div class="foto5">
-            <img src="../IMG/Torta3.PNG" class="imgProd">
+            <img src="../IMG/Panes1.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalSintacc">
         </div>
         <div class="foto6">
-            <img src="../IMG/Torta4.PNG" class="imgProd">
-        </div>
-        <div class="panes productos animacionPrincipal animate__animated animate__fadeIn"> 
-            <section id="Panes">
-                <h2 class="secciones">Panes</h2>
-                <ul class="menuProd">
-                    <li>Pan de salvado</li>
-                    <li>Pan mix de semillas</li>
-                    <li>Pan de queso</li>
-                    <li>Pan integral</li>
-                </ul>
-            </section>
-        </div> 
-        <div class="patisserieF productos animacionPrincipal animate__animated animate__fadeIn"> 
-            <section id="Patisserie Francesa">
-                <h2 class="secciones">Patisserie Francesa</h2>
-                <ul class="menuProd">
-                    <li>Caneles</li>
-                    <li>Macarons</li>
-                    <li>Profiteroles</li>
-                    <li>Eclairs</li>
-                </ul>
-            </section>            
-        </div>
-        <div class="patisserieA productos animacionPrincipal animate__animated animate__fadeIn">
-            <section id="Patisserie Argentina">
-                <h2 class="secciones">Patisserie Argentina</h2>
-                <ul class="menuProd">
-                    <li>Alfajores de maizena</li>
-                    <li>Alfajores de ddl</li>
-                    <li>Mini rogel</li>
-                    <li>Mini torta de ricota</li>
-            </ul>
-        </section>
+            <img src="../IMG/Torta1.PNG" class="imgProd" data-bs-toggle="modal" data-bs-target="#modalEventos">
         </div>
     </main>
-    <div class="footer">
-        <footer>
-            <span>Copyright Emiliano Varni</span>
-        </footer>
-    </div>
+    <section class="modales">
+        <div class="modal" id="modalArgentina" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Clásicos Argentinos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Alfajores de maizena</li>
+                            <li>Alfajores de ddl</li>
+                            <li>Mini rogel</li>
+                            <li>Mini torta de ricota</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalPanes" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nuestros Panes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Pan de salvado</li>
+                            <li>Pan mix de semillas</li>
+                            <li>Pan de queso</li>
+                            <li>Pan integral</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalTortas" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nuestras Tortas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Marquise de chocolate</li>
+                            <li>Torta opera de chocolate y cafe</li>
+                            <li>Torta de crema de pistachos y frambuesas</li>
+                            <li>Torta sacher</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalFrancesa" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Patisserie Francesa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Canelés</li>
+                            <li>Macarons</li>
+                            <li>Profiteroles</li>
+                            <li>Eclairs</li>
+                            <li>Tarte aux fruits</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalSintacc" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Eventos Especiales</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Baguettes</li>
+                            <li>Pan de chía</li>
+                            <li>Bagels</li>
+                            <li>Pan de salvado con semillas</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalEventos" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Eventos Especiales</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Tortas bautismos</li>
+                            <li>Tortas cumpleaños</li>
+                            <li>Tortas casamientos</li>
+                        </ul>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Seguinos en Instagram</span><a href="https://www.instagram.com/la_patisserie_oficial/" class="navbar-brand"><i class='bx bxl-instagram'></i></a>
+        <span>Contactanos por Whatsapp</span><a href="https://wa.me/+5491199999999" class="navbar-brand"><i class='bx bxl-whatsapp' ></i></a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
