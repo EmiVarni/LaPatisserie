@@ -63,10 +63,11 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin: 0px;
+    margin: 8px;
     font-family: $fuentePrincipal;
     color: $color-fuente;
     font-size: 16px;
+    margin-top: -10px;
 }
 
 .enviar{
@@ -208,6 +209,9 @@ h5{
         display: flex;
         width: 100%;
     }
+    .logoInic{
+        width: 50%;
+    }
     .textoIndex{
         font-size: 30px;    
     }
@@ -215,7 +219,6 @@ h5{
         font-size: small ;
         margin: 0px;
         width: 98%;
-        // position: absolute;
     }
     
     .menu{
@@ -247,21 +250,6 @@ h5{
         align-items: flex-end;
     }
 
-    /* Responsive Registrame */
-
-    .bodyRegistro{
-        background: {
-            position:center center;
-            repeat: no-repeat;
-            attachment: fixed;
-        }
-    }
-    .titleRegistro{
-        margin: 40px;
-        font-size: 20px;
-        @include flex-row-center;
-    }
-
     /* Responsive Contacto */
 
     .bodyContacto{
@@ -274,7 +262,13 @@ h5{
     .subContacto{
         padding: 5px;
         margin: 2px;
+        margin-bottom: -5px;
         }
+    
+    .titleContacto{
+        font-size: 20px;
+        @include flex-row-center;
+    }
 
     /* Responsive Principal */
 
@@ -306,5 +300,20 @@ h5{
         font-family: $fuentePrincipal;
         font-size: medium;
         white-space: pre-line;   
+    }
+    footer{
+        font-size: x-small ;
+    }  
+}
+
+@media screen and (min-width: 768px)and(max-width:991px){
+    .imgInicio{
+    width:85%
+    }
+    .textoIndex{
+    font-size: xx-large;
+    }
+    main{
+        margin-left: 20%;
     }
 }

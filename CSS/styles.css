@@ -11,13 +11,18 @@
   color: #820c6c;
   white-space: pre-line;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: -8px; }
 
 header {
   text-align: center;
   color: #820c6c;
   font-family: 'Roboto Slab', serif;
   font-size: medium; }
+
+.titleContacto {
+  font-size: 25px;
+  margin: 10px; }
 
 .navbar-collapse {
   display: flex;
@@ -173,10 +178,11 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  margin: 0px;
+  margin: 8px;
   font-family: "Roboto Slab", serif;
   color: #820c6c;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: -10px; }
 
 .enviar {
   background-color: #fccfe2;
@@ -284,6 +290,8 @@ h5 {
   .imgInicio {
     display: flex;
     width: 100%; }
+  .logoInic {
+    width: 50%; }
   .textoIndex {
     font-size: 30px; }
   footer {
@@ -312,17 +320,6 @@ h5 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end; }
-  /* Responsive Registrame */
-  .bodyRegistro {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
-  .titleRegistro {
-    margin: 40px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
   /* Responsive Contacto */
   .bodyContacto {
     background-position: center center;
@@ -330,7 +327,13 @@ h5 {
     background-attachment: fixed; }
   .subContacto {
     padding: 5px;
-    margin: 2px; }
+    margin: 2px;
+    margin-bottom: -5px; }
+  .titleContacto {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
   /* Responsive Principal */
   .textinic {
     transform: translate(1%, -295%); }
@@ -355,4 +358,14 @@ h5 {
     color: #820c6c;
     font-family: "Roboto Slab", serif;
     font-size: medium;
-    white-space: pre-line; } }
+    white-space: pre-line; }
+  footer {
+    font-size: x-small; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .imgInicio {
+    width: 85%; }
+  .textoIndex {
+    font-size: xx-large; }
+  main {
+    margin-left: 20%; } }

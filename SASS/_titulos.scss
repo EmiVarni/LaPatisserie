@@ -14,6 +14,7 @@
     white-space: pre-line;
     display: flex;
     flex-direction: column;
+    margin-bottom: -8px;
 }
 
 // Titulo Productos y sucursales
@@ -22,4 +23,8 @@ header{
     color: $color-fuente;
     font-family: 'Roboto Slab', serif;
     font-size: medium;
+}
+.titleContacto{
+    font-size: 25px;
+    margin: 10px;
 }
