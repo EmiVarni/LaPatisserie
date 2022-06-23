@@ -9,7 +9,9 @@
     Belgrano: Malasia 1456, Villa Urquiza: Malabia 2300. 
     Tiendas en GBA: Martinez: Av. Libertador 5400, Olivos: Charcas 1456, San Isidro: Libertad 1342.">
     <meta name="keywords" content="pasteleria, cosas ricas, tortas, alfajores, macarons, eventos, ducle de leche">
-    <title>Nuestros Productos</title>
+    <title>La Patisserie-Nuestros Productos</title>
+    <!-- Icono en pestaña -->
+    <link rel="icon" href="../IMG/Logo.png">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +28,12 @@
 </head>
 <body>
     <nav class="nav nav-pills navbar navbar-expand-lg navbar-light">
-        <a href="../index.html" class="navbar-brand"><img src="../IMG/Logo.jpg" class="logoInic" alt=""></a>
+        <a href="../index.html" class="navbar-brand"><img src="../IMG/Logo.png" class="logoInic" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="menu menu__nav">
+            <ul class="menu">
                 <li class="nav-item">
                     <a href="../index.html" style="text-decoration:none" class="nav-link active" aria-current="page">Home</a>
                 </li>
@@ -45,14 +47,14 @@
                     <a href="tienda.html" style="text-decoration:none" class="nav-link active" aria-current="page">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contacto.html" style="text-decoration:none" class="nav-link active" aria-current="page">Contactanos</a>
+                    <a href="contacto.html" style="text-decoration:none" class="nav-link active" aria-current="page">Contacto</a>
                 </li>       
             </ul>
         </div>
     </nav>
     <header>    
         <h1>Nuestros Productos</h1>
-        <i class='bx bx-camera'></i><p>Clicklea las imagenes para descubrirlos</p>  
+        <i class='bx bx-camera'></i><p class="clickImagen">Clicklea las imagenes para descubrirlos</p>  
     </header>   
     <main>
         <div class="foto1">
@@ -84,14 +86,43 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Alfajores de maizena</li>
-                            <li>Alfajores de ddl</li>
-                            <li>Mini rogel</li>
-                            <li>Mini torta de ricota</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="clasicosArgentinos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/alfajoresmaicena.PNG" class="imgProd d-block" alt="Alfajores de maizena">
+                                    <div class="card-body">
+                                        <p class="card-text">Alfajores de maicena</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalalfaddl.PNG" class="imgProd d-block" alt="Alfajores de ddl">
+                                    <div class="card-body">
+                                        <p class="card-text">Alfajores de dulce de leche</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/Modalminirogel.PNG" class="imgProd d-block" alt="Mini rogel">
+                                    <div class="card-body">
+                                        <p class="card-text">MIni rogel</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/minitortaricota.PNG" class="imgProd d-block" alt="Mini torta de ricota">
+                                    <div class="card-body">
+                                        <p class="card-text">Mini torta de ticota</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#clasicosArgentinos"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#clasicosArgentinos"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -105,14 +136,43 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Pan de salvado</li>
-                            <li>Pan mix de semillas</li>
-                            <li>Pan de queso</li>
-                            <li>Pan integral</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="Panes" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/modalsalvado.png" class="imgProd d-block" alt="Pan de salvado">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan de salvado</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalmixsemillas.png" class="imgProd d-block" alt="Pan mix de semillas">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan mix de semillas</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/pandequeso.png" class="imgProd d-block" alt="Pan de queso">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan de queso</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalpanintegral.png" class="imgProd d-block" alt="Pan integral">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan integral</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Panes"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Panes"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -126,19 +186,48 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Marquise de chocolate</li>
-                            <li>Torta opera de chocolate y cafe</li>
-                            <li>Torta de crema de pistachos y frambuesas</li>
-                            <li>Torta sacher</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="Tortas" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/modalmarquise.png" class="imgProd d-block" alt="Marquise de chocolate">
+                                    <div class="card-body">
+                                        <p class="card-text">Marquise de chocolate</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalopera.png" class="imgProd d-block" alt="Torta opera de chocolate y cafe">
+                                    <div class="card-body">
+                                        <p class="card-text">Torta opera de chocolate y cafe</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalpistachos.png" class="imgProd d-block" alt="Torta de crema de pistachos">
+                                    <div class="card-body">
+                                        <p class="card-text">Torta de crema de pistachos</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalsacher.png" class="imgProd d-block" alt="Torta sacher">
+                                    <div class="card-body">
+                                        <p class="card-text">Torta sacher</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Tortas"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Tortas"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
         <div class="modal" id="modalFrancesa" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -147,15 +236,48 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Canelés</li>
-                            <li>Macarons</li>
-                            <li>Profiteroles</li>
-                            <li>Eclairs</li>
-                            <li>Tarte aux fruits</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="Francesa" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/caneles.png" class="imgProd d-block" alt="Canelés">
+                                    <div class="card-body">
+                                        <p class="card-text">Canelés</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/macarons.png" class="imgProd d-block" alt="Macarons">
+                                    <div class="card-body">
+                                        <p class="card-text">Macarons</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/profiteroles.png" class="imgProd d-block" alt="Profiteroles">
+                                    <div class="card-body">
+                                        <p class="card-text">Profiteroles</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/eclairs.png" class="imgProd d-block" alt="Eclairs">
+                                    <div class="card-body">
+                                        <p class="card-text">Eclairs</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modaltartafrutal.png" class="imgProd d-block" alt="Tarte aux fruits">
+                                    <div class="card-body">
+                                        <p class="card-text">Tarte aux fruits</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Francesa"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Francesa" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -165,18 +287,46 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Eventos Especiales</h5>
+                        <h5 class="modal-title">Panes sin tacc</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Baguettes</li>
-                            <li>Pan de chía</li>
-                            <li>Bagels</li>
-                            <li>Pan de salvado con semillas</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="panesSintacc" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/modalbaguette.png" class="imgProd d-block" alt="Baguettes">
+                                    <div class="card-body">
+                                        <p class="card-text">Baguettes</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalchia.png" class="imgProd d-block" alt="Pan de chía">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan de chía</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalbagels.png" class="imgProd d-block" alt="Bagels">
+                                    <div class="card-body">
+                                        <p class="card-text">Bagels</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalsalvado.png" class="imgProd d-block" alt="Pan de salvado con semillas">
+                                    <div class="card-body">
+                                        <p class="card-text">Pan de salvado con semillas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#panesSintacc"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#panesSintacc" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -190,22 +340,44 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li>Tortas bautismos</li>
-                            <li>Tortas cumpleaños</li>
-                            <li>Tortas casamientos</li>
-                        </ul>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <div id="Eventos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../IMG/modalbautismo.png" class="imgProd d-block" alt="Tortas bautismos">
+                                    <div class="card-body">
+                                        <p class="card-text">Tortas bautismos</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalcumple.png" class="imgProd d-block" alt="Tortas cumpleaños">
+                                    <div class="card-body">
+                                        <p class="card-text">Tortas cumpleaños</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../IMG/modalcasamiento.png" class="imgProd d-block" alt="Tortas casamientos">
+                                    <div class="card-body">
+                                        <p class="card-text">Tortas casamientos</p>
+                                    </div>
+                                </div>
+                            </div>        
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Eventos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Eventos" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #EB84AF;"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </section>
     <footer>
         <span>Seguinos en Instagram</span><a href="https://www.instagram.com/la_patisserie_oficial/" class="navbar-brand" target="blank"><i class='bx bxl-instagram'></i></a>
-        <span>Contactanos por Whatsapp</span><a href="https://wa.me/+5491199999999" class="navbar-brand" target="blank"><i class='bx bxl-whatsapp' ></i></a>
+        <span>Contáctanos por Whatsapp</span><a href="https://wa.me/+5491199999999" class="navbar-brand" target="blank"><i class='bx bxl-whatsapp' ></i></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

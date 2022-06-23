@@ -36,7 +36,6 @@ header {
   border-color: #fccfe2; }
 
 nav a:hover {
-  color: #EB84AF;
   font-size: medium;
   font-family: "Roboto", sans-serif; }
 
@@ -51,11 +50,6 @@ ul {
   padding: 10px;
   margin: 15px;
   font-size: large; }
-
-.menu__nav a:hover {
-  color: #EB84AF;
-  font-size: medium;
-  font-family: "Roboto", sans-serif; }
 
 .imgProd {
   object-fit: cover;
@@ -106,17 +100,12 @@ ul {
   border-radius: 1rem; }
 
 .bodyContacto {
-  background-image: url(../IMG/Contacto.png);
+  background-image: url(../IMG/Captura.PNG);
   background-size: cover;
   background-position: initial; }
 
-.bodyRegistro {
-  background-image: url(../IMG/imgprod.PNG);
-  background-size: cover;
-  background-position: center; }
-
 .imgSucur {
-  background-image: url(../IMG/Sucursales.PNG);
+  background-image: url(../IMG/Captura3.PNG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +151,7 @@ footer {
   font-size: medium;
   line-height: 50px;
   position: fixed;
-  bottom: -20px;
+  bottom: -30px;
   margin: 0px;
   width: 100%;
   background-color: #FAE1DD;
@@ -178,7 +167,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  margin: 8px;
+  margin: 5px;
   font-family: "Roboto Slab", serif;
   color: #820c6c;
   font-size: 16px;
@@ -193,6 +182,9 @@ footer {
   font-family: "Roboto Slab", serif;
   font-size: medium;
   color: #820c6c; }
+
+.enviar__efecto:hover {
+  background-color: antiquewhite; }
 
 /* Sucursales */
 .textoTienda {
@@ -229,6 +221,10 @@ main {
     grid-column: 3/5; }
   main .foto6 {
     grid-column: 5/7; }
+
+p {
+  font-family: "Roboto Slab", serif;
+  color: #820c6c; }
 
 /* Tienda */
 .btn {
@@ -328,12 +324,15 @@ h5 {
   .subContacto {
     padding: 5px;
     margin: 2px;
-    margin-bottom: -5px; }
+    margin-bottom: -5px;
+    font-size: 12px; }
   .titleContacto {
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .enviar {
+    font-size: small; }
   /* Responsive Principal */
   .textinic {
     transform: translate(1%, -295%); }
@@ -341,8 +340,6 @@ h5 {
   .pagSucursales {
     margin-left: 17%;
     margin-top: 15%; }
-  .imgSucur {
-    background-image: none; }
   /* Responsibe Nosotros */
   .Roboto {
     background-image: none;
@@ -369,3 +366,22 @@ h5 {
     font-size: xx-large; }
   main {
     margin-left: 20%; } }
+
+@media screen and (max-width: 1024px) {
+  .titNosotros {
+    font-size: medium; }
+  p {
+    margin-top: 0;
+    margin-bottom: -1rem;
+    font-size: small; }
+  Productos
+main {
+    max-width: 350px;
+    padding: 5px;
+    margin-left: 33%; }
+  .clickImagen {
+    margin-bottom: 1rem; }
+  .subContacto {
+    font-size: small; }
+  .enviar {
+    font-size: small; } }

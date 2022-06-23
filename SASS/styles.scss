@@ -46,7 +46,7 @@ footer{
     font-size: medium ;
     line-height: 50px;
     position:fixed;
-    bottom: -20px;
+    bottom: -30px;
     margin: 0px;
     width: 100%;
     background-color:$color-footer;
@@ -63,7 +63,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin: 8px;
+    margin: 5px;
     font-family: $fuentePrincipal;
     color: $color-fuente;
     font-size: 16px;
@@ -82,6 +82,9 @@ footer{
 
 }
 
+.enviar__efecto:hover{
+    background-color: antiquewhite
+}
 /* Sucursales */
 
 .textoTienda{
@@ -129,6 +132,10 @@ main{
         grid-column: 5/7;
     
     }
+}
+p{
+    font-family: $fuentePrincipal;
+    color:$color-fuente;
 }
 
 /* Tienda */
@@ -263,11 +270,17 @@ h5{
         padding: 5px;
         margin: 2px;
         margin-bottom: -5px;
+        font-size: 12px;
         }
     
     .titleContacto{
         font-size: 20px;
         @include flex-row-center;
+    }
+
+    .enviar{
+        font-size: small;
+    
     }
 
     /* Responsive Principal */
@@ -280,9 +293,6 @@ h5{
     .pagSucursales{
         margin-left: 17%;
         margin-top: 15%;
-    }
-    .imgSucur{
-    background-image: none;
     }
 
     /* Responsibe Nosotros */
@@ -303,7 +313,7 @@ h5{
     }
     footer{
         font-size: x-small ;
-    }  
+    }
 }
 
 @media screen and (min-width: 768px)and(max-width:991px){
@@ -316,4 +326,39 @@ h5{
     main{
         margin-left: 20%;
     }
+}
+@media screen and (max-width: 1024px){
+    // Nosotros
+
+    .titNosotros{
+        font-size: medium;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom:-1rem;
+        font-size: small;  
+    }
+
+    Productos
+
+    main {
+        max-width: 350px;
+        padding: 5px;
+        margin-left: 33%;
+    }
+    .clickImagen{
+        margin-bottom: 1rem;
+    }
+
+    // Contacto
+
+    .subContacto {
+        font-size: small;
+    }
+
+    .enviar{
+        font-size: small;
+    
+    }
+    
 }
